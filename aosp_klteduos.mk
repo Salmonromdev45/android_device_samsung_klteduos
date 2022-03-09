@@ -20,9 +20,6 @@ $(call inherit-product, vendor/aosp/common.mk)
 
 $(call inherit-product, device/samsung/klteduos/full_klteduos.mk)
 
-# Gapps
-WITH_GAPPS := true
-$(call inherit-product, vendor/google/common/common-vendor.mk)
 
 # Pixel Offline charging animation
 TARGET_INCLUDE_PIXEL_CHARGER
