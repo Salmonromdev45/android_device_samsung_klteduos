@@ -15,3 +15,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_klteduos.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_samsung_klteduos-user \
+    aosp_samsung_klteduos-userdebug \
+    aosp_samsung_klteduos-eng
