@@ -15,14 +15,14 @@
 # limitations under the License.
 #
 
-# Inherit some common aosp stuff.
+# Inherit some common AEX stuff.
 $(call inherit-product, vendor/aosp/common.mk)
 
 $(call inherit-product, device/samsung/klteduos/full_klteduos.mk)
 
 
 # Pixel Offline charging animation
-TARGET_INCLUDE_PIXEL_CHARGER
+TARGET_INCLUDE_PIXEL_CHARGER := True
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -37,7 +37,8 @@ PRODUCT_NAME := aosp_klteduos
 # Include Bootanimation configuration
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Salman Fares" 
+TARGET_HAS_FOD := true
+
+
 
 
